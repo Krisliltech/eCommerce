@@ -52,7 +52,7 @@ const ListItem = styled.li`
 `
 const Right = styled.div`
     flex:1;
-    ppadding: 20px;
+    padding: 20px;
 `
 const ContactItem = styled.div`
     margin-bottom: 20px;
@@ -60,10 +60,7 @@ const ContactItem = styled.div`
     align-items: center;
 `
 const Payment = styled.img`
-    margin: 0;
-    padding: 0;
     width: 50%;
-    // height: 60px;
 `
 
 const Footer = () => {
@@ -113,9 +110,9 @@ const Footer = () => {
                     <Phone style={{marginRight: "10px"}} /> +234 117 343 8763
                 </ContactItem>
                 <ContactItem>
-                    <MailOutline style={{marginRight: "10px"}} />contact@kartify.net
+                    <MailOutline style={{marginRight: "10px"}}/>contact@kartify.net
                 </ContactItem>
-                <Payment src="https://eportal.oscotechesaoke.edu.ng/collegepayment/images/isw_logo_new_combined_2.png" />
+                <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
             </Right>
         </Container>
     )
