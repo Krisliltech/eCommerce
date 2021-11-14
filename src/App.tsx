@@ -7,8 +7,8 @@ import ProductList from './pages/ProductList';
 function App() {
   return (
     <>
-    <Home />
-    {/* <ProductList /> */}
+    {/* <Home /> */}
+    <ProductList />
     {/* <Product /> */}
     </>
   );
