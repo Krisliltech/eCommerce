@@ -28,25 +28,48 @@ const Title = styled.h1`
 const Form = styled.form`
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 `
 const Input = styled.input`
     flex: 1;
     min-width: 40%;
     margin: 20px 10px 0 0;
     padding: 7px;
-
 `
 const Agreement = styled.span`
     font-size: 12px;
     margin: 20px 0;
 `
 const Button = styled.button`
-    width: 40%;
+    width: 60%;
+    // min-width: 100%;
     border: none;
-    padding: 15px 20px;
+    padding: 10px 20px;
     background-color: teal;
     color: white;
     cursor: pointer;
+    border-radius:5px;
+`
+const Contain = styled.div`
+    margin: 20px 0px 5px 8px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    fontSize: 15px;
+`
+const Link = styled.a`
+    margin: 5px 0;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: teal;
+
+    &:hover{
+        text-decoration: underline;
+    }
 `
 
 const Register = () => {
@@ -66,7 +89,10 @@ const Register = () => {
                         By creating an account, I consent to the processing of my personal
                         data in accordance with the <b>PRIVACY POLICY</b>
                     </Agreement>
-                    <Button>CREATE</Button>
+                    <Button>CREATE ACCOUNT</Button>
+                    <Contain>Already have an account?
+                        <Link>Sign In</Link>
+                    </Contain>
                 </Form>
             </Wrapper>
         </Container>
